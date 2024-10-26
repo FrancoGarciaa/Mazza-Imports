@@ -1,0 +1,53 @@
+/*  #cbd4cb (blanco)
+#41707b (Azulmarino)
+#3a6cb8 (celeste)
+
+
+*/
+
+
+
+
+.navbar{
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 50px; 
+    background-color:  #41707b ;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin-left: 1rem;
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    list-style-type: none;
+}
+
+
+.container2{
+    color: white;
+    margin-left: 8.5rem;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    list-style-type: none;
+}
