@@ -55,7 +55,7 @@ const products = [
     },
     {
         id: "promocion1",
-        name: "Remera Jordan + Invictus",
+        name: "Combo Dulce",
         description: "",
         stock: 3,
         price: 400,

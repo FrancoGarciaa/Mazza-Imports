@@ -1,31 +1,25 @@
 import "./ItemListContainer.css"
 import { useState, useEffect } from "react"
+import { getProducts } from "../../data/data.js"
 import ItemList from "./ItemList.jsx"
 
 
 const ItemListContainer = () => {
 const [products, setProducts] = useState([])
 
+    useEffect (()=> {
 
-const getProducts = () => {
-    return fetch("http://localhost:5173/api/productos")
-    .then( (respuesta)=> respuesta.json() )
-    .then( (data) => console.log(data))
-}
+    getProducts()
+    .then( (data)=> {
+        setProducts(data)
+    })
+    .finally(()=>{
+        console.log("finalizo la promesa")
+    })
 
-    // useEffect (()=> {
+    }, [])
 
-    // getProducts()
-    // .then( (data)=> {
-    //     setProducts(data)
-    // })
-    // .finally(()=>{
-    //     console.log("finalizo la promesa")
-    // })
-
-    // }, [])
-
-getProducts()
+console.log(products)
 
     return (
         <>
