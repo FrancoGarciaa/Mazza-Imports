@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0px 35px 0px 70px; 
+    padding: 0px 10px 0px 70px; 
     background-color:  #41707b ;
     display: flex;
     align-items: center;
@@ -22,13 +22,15 @@
 .logo{
     width: 150px;
     height: 150px;
+    margin-left: -2rem;
+    margin-right: 2rem;
     cursor: pointer;
 }
 
 .container2{
     color: white;
-    padding: 0rem;
-    font-size: 20px;
+    padding: 0 1px 2px 0;
+    font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     list-style-type: none;

@@ -1,6 +1,6 @@
 import NavBar from './components/Navbar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Down from './components/Footer/Down'
+import ItemListContainerWithHoc from './components/ItemListContainer/ItemListContainer'
 import './App.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
         <NavBar />
-        <ItemListContainer />
+        <ItemListContainerWithHoc />
         <Down />
     </div>
   )
