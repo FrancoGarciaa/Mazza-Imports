@@ -26,3 +26,10 @@ align-items: center;
     margin: 40px;
 }   
 
+h2{
+    color: #41707b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}

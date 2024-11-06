@@ -29,16 +29,15 @@ const hocFilterProducts = (Component) => {
 
         return(
             <>
-            <div>
+            <div className="filtrado">
                 <input type="text" placeholder="Ingrese el producto..." onChange={changeInput} />
-
-                <button onClick={ () => setTypeOrder("menor") }>Menor precio</button>
-                <button onClick={ () => setTypeOrder("mayor") }>Mayor precio</button>
-                {/* <select>
+                {/* <button onClick={ () => setTypeOrder("menor") } className="filtrado-orden"><i class="bi bi-arrow-down">Menor precio</i></button>
+                <button onClick={ () => setTypeOrder("mayor") } className="filtrado-orden"><i class="bi bi-arrow-up">Mayor precio</i></button> */}
+                <select>
                 <option value="filtrar">Filtrar..</option>
-                <option value="mayor" onClick={ () => setTypeOrder("mayor") }>Mayor precio</option>
-                <option value="menor" onClick={ () => setTypeOrder("menor") }>Menor precio</option>
-                </select> */}
+                <option value="" onClick={ () => setTypeOrder("mayor") }>Mayor precio</option>
+                <option value="" onClick={ () => setTypeOrder("menor") }>Menor precio</option>
+                </select>
             </div>
             <Component products={search()} />
             </>

@@ -6,18 +6,6 @@ import CarritoView from "./CardWidget"
 const NavBar = () => {
 
     return (
-        // <nav className="navbar">
-        //     <img src={logo} alt="" className="logo"/>
-
-        //     <ul className="container">
-        //         <li><a href="" className="container2">Electronicos</a></li>
-        //         <li><a href="" className="container2">Vestimenta</a></li>
-        //         <li><a href="" className="container2">Perfumes</a></li>
-        //         <li><a href="" className="container2">Promociones</a></li>
-        //     </ul>
-
-        //     <CarritoView />
-        // </nav>
         <nav className="navbar navbar-expand-lg bg-body-tertiar">
         <img src={logo} alt="" className="logo"/>
         <div className="container-fluid navbar">

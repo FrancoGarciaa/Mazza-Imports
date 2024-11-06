@@ -13,8 +13,8 @@ const products = [
         name: "iPhone 14 Pro Max",
         description: "",
         stock: 3,
-        price: 400,
-        image: "/img/celular1.png",
+        price: 1200,
+        image: "/img/celular2.png",
         category: "promociones",
     },
     {
@@ -28,11 +28,11 @@ const products = [
     },
     {
         id: "prenda2",
-        name: "Pantalon Jordan",
+        name: "Short Jordan",
         description: "",
         stock: 3,
         price: 400,
-        image: "/img/prenda1.png",
+        image: "/img/prenda2.png",
         category: "promociones",
     },
     {
@@ -50,7 +50,7 @@ const products = [
         description: "",
         stock: 5,
         price: 180,
-        image: "/img/perfume1.png",
+        image: "/img/perfume2.png",
         category: "perfumes",
     },
     {
