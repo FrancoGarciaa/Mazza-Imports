@@ -15,16 +15,16 @@ const products = [
         stock: 3,
         price: 1200,
         image: "/img/celular2.png",
-        category: "promociones",
+        category: "electronicos",
     },
     {
         id: "prenda1",
         name: "Remera Jordan",
-        description: "",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur rerum animi dignissimos itaque ratione, sapiente iusto exercitationem nemo dicta earum, blanditiis eligendi voluptatum expedita, minima natus quidem neque accusantium optio.",
         stock: 5,
         price: 300,
         image: "/img/prenda1.png",
-        category: "vestimenta",
+        category: "vestimentas",
     },
     {
         id: "prenda2",
@@ -33,7 +33,7 @@ const products = [
         stock: 3,
         price: 400,
         image: "/img/prenda2.png",
-        category: "promociones",
+        category: "vestimentas",
     },
     {
         id: "perfume1",
