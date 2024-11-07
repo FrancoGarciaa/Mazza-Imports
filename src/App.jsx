@@ -13,6 +13,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={  <ItemListContainerWithHoc /> }/>
+          <Route path="/category/:idCategory" element={  <ItemListContainerWithHoc /> }/>
         </Routes> 
 
         <Down />
