@@ -13,7 +13,7 @@ const NavBar = () => {
         </Link>
         <div className="container-fluid navbar">
         <a className="navbar-brand container2" href="#">
-            <Link to="/">Productos</Link>
+            <Link to="/" className="container2">All Products</Link>
             </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -22,22 +22,22 @@ const NavBar = () => {
             <ul className="navbar-nav container">
             <li className="nav-item navbar">
                 <a className="nav-link container2" aria-current="page" href="#">
-                    <Link to="/category/electronicos">Electronicos</Link>
+                    <Link to="/category/electronicos" className="container2">Electronics</Link>
                     </a>
             </li>
             <li className="nav-item navbar">
                 <a className="nav-link container2" href="#">
-                    <Link to="/category/vestimentas">Vestimentas</Link>
+                    <Link to="/category/vestimentas" className="container2">Clothes</Link>
                     </a>
             </li>
             <li className="nav-item navbar">
                 <a className="nav-link container2" href="#">
-                    <Link to="/category/perfumes">Perfumes</Link>
+                    <Link to="/category/perfumes" className="container2">Perfumes</Link>
                 </a>
             </li>
             <li className="nav-item navbar">
                 <a className="nav-link container2" href="#">
-                    <Link to="/category/promociones">Promociones</Link>
+                    <Link to="/category/promociones" className="container2">Promotions</Link>
                 </a>
             </li>
             </ul>

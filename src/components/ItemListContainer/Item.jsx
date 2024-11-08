@@ -1,4 +1,5 @@
 import "./ItemListContainer.css"
+import { Link } from "react-router-dom"
 
 const Item = ({ product }) => {
 return (
@@ -6,6 +7,8 @@ return (
     <img src={product.image} className="productos" alt="" />
     <h3>{product.name}</h3>
     <p>Precio: ${product.price}</p>
+    <Link to={"/detail/" + product.id}>Ver Detalles
+    </Link>
     </div>
 )
 }
