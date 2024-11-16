@@ -64,20 +64,23 @@ const Checkout = () => {
             const ordersRef = collection(db, "orders")
             const response = await addDoc(ordersRef, newOrder)
             setIdOrder(response.id)
+            await updateStock()
         } catch (error) {
             console.log(error)
-        } finally {
-            updateStock()
         }
     }
 
 
-    const updateStock = () => {
-        cart.map (( { id, quantity, ...dataProduct } )=> {
-            const productRef = doc(db,"products", id)
-            setDoc(productRef, {...dataProduct, stock: dataProduct.stock - quantity } )
-        })
-        deleteCart()
+    const updateStock = async () => {
+        try {
+            for (const { id, quantity, ...dataProduct } of cart) {
+                const productRef = doc(db, "products", id);
+                await setDoc(productRef, { ...dataProduct, stock: dataProduct.stock - quantity });
+            }
+            deleteCart()
+        } catch (error) {
+            console.log("Error al actualizar el stock:", error)
+        }
     }
 
 return (
@@ -90,8 +93,8 @@ return (
                 {
                     cart.map((productCart)=> (
                         <>
-                        <div className="cart-text-checkout">
-                        <img src={productCart.image[0]} className="image-cart" alt="" />
+                        <div key={productCart.id} className="cart-text-checkout">
+                        <img src={productCart.image?.[0] || "imagen_por_defecto.jpg"} className="image-cart" alt="" />
                             <div>
                             <div className="cart-text-check">
                                     <h4>Producto</h4>

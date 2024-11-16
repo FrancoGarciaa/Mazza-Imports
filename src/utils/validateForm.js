@@ -1,9 +1,9 @@
 import { mixed, object, string } from "yup";
 
-let userSchema = object ({
+let userSchema = object({
     fullname: string().required(""),
-    phone: mixed().required(""),
-    email: string().email("")
+    phone: string().required("").matches(""),
+    email: string().email("").required("")
 })
 
 const validateForm = async(dataForm) => {
