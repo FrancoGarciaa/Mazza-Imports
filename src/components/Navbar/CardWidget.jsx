@@ -1,8 +1,8 @@
 import "../Navbar/navbar.css"
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-import carritoFoto from "../../assets/carrito2.png"
 import { Link } from "react-router-dom"
+import { FaCartShopping } from "react-icons/fa6";
 
 
 const CarritoView = () => {
@@ -13,8 +13,8 @@ const CarritoView = () => {
 
 return (
     <Link to="/cart" className="container2">
-    <img src={carritoFoto} width={100} alt="" className="carrito" style={ quantity === 0 ? { color: "black" } : {color: "white"} }/>
-    <p className="carrito">{ quantity >= 0 && quantity }</p>
+    <FaCartShopping className="carrito" style={ quantity === 0 ? { color: "black" } : {color: "white"} }/>
+    <p className="carrito" style={ quantity === 0 ? { color: "black" } : {color: "white", textDecoration: "underline"} }>{ quantity >= 0 && quantity }</p>
 </Link> 
 )
 }

@@ -5,7 +5,7 @@ const Loading = () => {
     return (
     <div className="loading">
         <BounceLoader color="#41707b" size={100}/>
-        <h2>Wait...</h2>
+        <h2>Espere...</h2>
     </div>
     )
 }

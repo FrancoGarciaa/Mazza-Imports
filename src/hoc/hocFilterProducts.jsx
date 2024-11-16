@@ -12,18 +12,26 @@ const hocFilterProducts = (Component) => {
             setQuery( event.target.value.toLowerCase() ) 
         }
 
+        const handleOrderChange = (event) => {
+            setTypeOrder(event.target.value)
+        }
+
         const search = () => {
-            let filterProducts = products.filter( (product) => (
+            let filteredProducts = products.filter( (product) => (
                 product.name.toLowerCase().includes(query)
             ))
 
-            if(typeOrder === "menor"){
-                filterProducts = filterProducts.sort( (prevProduct, nextProduct) => prevProduct.price - nextProduct.price)
-            }else if(typeOrder === "mayor"){
-                filterProducts = filterProducts.sort( (prevProduct, nextProduct) => nextProduct.price - prevProduct.price)
+            if (typeOrder === "menor") {
+                filteredProducts = filteredProducts.sort(
+                (a, b) => a.price - b.price
+                )
+            } else if (typeOrder === "mayor") {
+                filteredProducts = filteredProducts.sort(
+                (a, b) => b.price - a.price
+                )
             }
 
-            return filterProducts
+            return filteredProducts
 
         }
 
@@ -33,11 +41,11 @@ const hocFilterProducts = (Component) => {
                 <input type="text" placeholder="Ingrese el producto..." onChange={changeInput} />
                 {/* <button onClick={ () => setTypeOrder("menor") } className="filtrado-orden"><i class="bi bi-arrow-down">Menor precio</i></button>
                 <button onClick={ () => setTypeOrder("mayor") } className="filtrado-orden"><i class="bi bi-arrow-up">Mayor precio</i></button> */}
-                <select>
-                <option value="filtrar">Filtrar..</option>
-                <option value="" onClick={ () => setTypeOrder("mayor") }>Mayor precio</option>
-                <option value="" onClick={ () => setTypeOrder("menor") }>Menor precio</option>
-                </select>
+            <select value={typeOrder} onChange={handleOrderChange}>
+                <option value="">Ordenar por...</option>
+                <option value="mayor">Mayor precio</option>
+                <option value="menor">Menor precio</option>
+            </select>
             </div>
             <Component products={search()} />
             </>

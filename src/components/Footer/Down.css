@@ -19,8 +19,8 @@
     line-height: 55px;
     bottom: 30px;
     right: 30px;
-    background: #0df053;
-    color: #fff;
+    background: #fff;
+    color: #0df053;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -31,6 +31,6 @@
 
 .contacto:hover{
     text-decoration: none;
-    color: #0df053;
-    background: #fff;
+    color: #fff;
+    background: #0df053;
 }

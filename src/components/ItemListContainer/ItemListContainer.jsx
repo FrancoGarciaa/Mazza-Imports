@@ -10,7 +10,7 @@ const ItemListContainer = ({ products }) => {
 
     return (
         <>
-        <div>
+        <div className="item-list-container">
         <h2>PRODUCTOS</h2>
         {
             loading === true ? (

@@ -5,7 +5,7 @@ body{
 .container-item{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 2fr 1.5fr 0.8fr;
+grid-template-rows: 1fr 1.5fr 1fr;
 align-items: center;
 
 
@@ -15,7 +15,9 @@ align-items: center;
     width: 100%;
     height: 250px;
     border-radius: 10px;
+    padding: 0px;
 }
+
 
 .container-itemvisual{
     background-color: rgb(248, 248, 248);
@@ -23,7 +25,8 @@ align-items: center;
     border-color: black;
     border-radius: 15px;
     padding: 1rem;
-    margin: 40px;
+    margin: 30px;
+    justify-items: center;
 }   
 
 h2{
@@ -32,4 +35,33 @@ h2{
     margin-left: 2.5rem;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.details-items{
+    text-decoration: none;
+    border: 4px solid;
+    color: #41707b;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.price-item{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.container-itemvisual button{
+    margin: 10px;
+    border: 0;
+    border: 4px solid;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    border-color: #41707b;
+}
+
+.item-list-container h2{
+    margin-left: 2.5rem;
 }

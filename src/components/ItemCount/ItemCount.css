@@ -1,0 +1,22 @@
+.add-cart{
+    margin: 1rem;
+    border: 0;
+    font-size: 25px;
+    background: none;
+}
+
+.item-count button{
+    border: 1px solid;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.item-count p{
+    border: 3px solid black; 
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    background: #41707b;
+    font-weight: 700;
+}

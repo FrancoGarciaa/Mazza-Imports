@@ -47,6 +47,7 @@ const CartProvider = ({ children }) => {
         setCart([])
     }
 
+
     return(
         <CartContext.Provider value={ { cart, addProductInCart, totalQuantity, totalPrice, deleteProductById, deleteCart } } >
             {children}

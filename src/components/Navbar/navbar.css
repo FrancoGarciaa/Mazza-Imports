@@ -21,7 +21,7 @@
 
 .logo{
     width: 150px;
-    height: 150px;
+    height: 140px;
     margin-left: -2rem;
     margin-right: 2rem;
     cursor: pointer;
@@ -34,8 +34,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     list-style-type: none;
+    text-decoration: none;
 }
 
+.container2:hover{
+    color: #9ca19c;
+}
 
 ul{
     list-style-type: none;
@@ -55,6 +59,8 @@ a{
 }
 
 .carrito{
+    width: 90px;
+    padding: 0px;
     display: flex;
     justify-content: center;
 }
