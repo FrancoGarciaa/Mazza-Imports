@@ -1,6 +1,7 @@
 # Mazza-Imports
 
-## Description: I am a man who started a small business with my father about products from other countries exported here to Argentina. From mobile phones to clothes imported from other countries like the United States, Spain and more.
+
+## Descripción: Soy un hombre que inició un pequeño negocio con mi padre sobre productos de otros países que se exportan aquí a Argentina. Desde teléfonos móviles hasta ropa importada de otros países como Estados Unidos, España y más.
 
 
-## Depedencies: "firebase"-"react"-"react-dom"-"react-router-dom"-"react-spinners"-"react-toastify"-"yup". these are my dependencies to build my app
+## Depedencias:  "firebase"-"react"-"react-dom"-"react-router-dom"-"react-spinners"-"react-toastify"-"yup"-"sweetalert2". these are my dependencies to build my app

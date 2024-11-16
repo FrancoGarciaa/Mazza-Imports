@@ -46,6 +46,13 @@ h2{
     padding: 5px;
 }
 
+.details-items:hover{
+
+    background-color: #41707b;
+    color: white;
+
+}
+
 .price-item{
     font-weight: 700;
     text-decoration: underline;
@@ -64,4 +71,9 @@ h2{
 
 .item-list-container h2{
     margin-left: 2.5rem;
+}
+
+.add-cart:hover{
+    background-color: #41707b;
+    color: white;
 }

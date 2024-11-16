@@ -49,7 +49,6 @@ const Checkout = () => {
             total: totalPrice()
         }
 
-
         try{
             const response = await validateForm(dataForm)
             if(response.status === "error") throw new Error(response.message)
@@ -70,7 +69,7 @@ const Checkout = () => {
         } finally {
             updateStock()
         }
-    };
+    }
 
 
     const updateStock = () => {

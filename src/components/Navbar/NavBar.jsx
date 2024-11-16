@@ -13,7 +13,7 @@ const NavBar = () => {
         </Link>
         <div className="container-fluid navbar">
         <a className="navbar-brand container2" href="#">
-            <Link to="/" className="container2">All Products</Link>
+            <Link to="/" className="container2">Productos</Link>
             </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -22,12 +22,12 @@ const NavBar = () => {
             <ul className="navbar-nav container">
             <li className="nav-item navbar">
                 <a className="nav-link container2" aria-current="page" href="#">
-                    <Link to="/category/electronicos" className="container2">Electronics</Link>
+                    <Link to="/category/electronicos" className="container2">Electronicos</Link>
                     </a>
             </li>
             <li className="nav-item navbar">
                 <a className="nav-link container2" href="#">
-                    <Link to="/category/vestimentas" className="container2">Clothes</Link>
+                    <Link to="/category/vestimentas" className="container2">Vestimenta</Link>
                     </a>
             </li>
             <li className="nav-item navbar">
@@ -37,7 +37,7 @@ const NavBar = () => {
             </li>
             <li className="nav-item navbar">
                 <a className="nav-link container2" href="#">
-                    <Link to="/category/promociones" className="container2">Promotions</Link>
+                    <Link to="/category/promociones" className="container2">Promociones</Link>
                 </a>
             </li>
             </ul>
