@@ -49,7 +49,7 @@ const CartProvider = ({ children }) => {
 
     const deleteProductById = (idProduct) => {
         const filterProducts = cart.filter((productCart) => productCart.id !== idProduct);
-        setCart(filterProducts);
+        setCart(filterProducts)
         toast.error("Producto eliminado")
     }
 

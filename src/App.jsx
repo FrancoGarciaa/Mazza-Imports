@@ -5,7 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import Cart from './components/Cart/Cart'
-import Checkout from './components/checkout/checkout'
+import Checkout from './components/Checkout/Checkout.jsx'
 import { ToastContainer } from 'react-toastify';
 import './App.css'
 import 'react-toastify/dist/ReactToastify.css';
